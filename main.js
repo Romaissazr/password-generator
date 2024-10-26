@@ -134,6 +134,7 @@ function createPassword() {
     passwordBox.style.color = "#e6e5e8";
     updateStrengthIndicator(); 
 }
+ passwordBox.disabled = true; 
 function copyPassword() {
     const rectangles = document.querySelectorAll(".rectangle");
     
