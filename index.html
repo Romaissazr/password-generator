@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9e66f5e506.js" crossorigin="anonymous"></script>
+    <title>Password Gemerator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="password">
+            <input type="text" id="password" value="Password"  disabled>
+            <i class="fa-regular fa-copy" onclick="copyPassword()"></i>
+        </div>
+        <div class="generator">
+            <div class="length">
+                <p>Character Length</p>
+        
+                <p id="lenghtCount">5</p>
+            </div>
+            <input type="range" id="points" name="points" min="4" max="15" o value="5" oninput="updateValue()">
+          
+         <div class="inpts">
+            <div class="checkbox">
+            <input type="checkbox" id="uppercase" checked >
+            <label for="uppercase">Include Uppercase Letters</label>
+        </div> <div class="checkbox">
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Include Lawercase Letters</label>
+        </div> <div class="checkbox">
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Include Numbers </label>
+
+        </div> <div class="checkbox">
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Include Symbols </label>
+        </div>
+        </div>
+            <div class="strength">
+                <span>Strength</span>
+                <div class="level">
+                    <p class="pstype"></p>
+                    <div class="rectangles">
+                        <div class="rectangle" id=""></div>
+                        <div class="rectangle" id=""></div>
+                        <div class="rectangle" id=""></div>
+                        <div class="rectangle" id=""></div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="createPassword()">Generate <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="alert-container hidden"></div>
+    <div class="alert hidden">
+        <i class="fa-solid fa-xmark" id="i" onclick="closeAlert()"></i>
+        <p>Please select at least one character type.<i class="fa-solid fa-triangle-exclamation" ></i></p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

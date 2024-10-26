@@ -1,0 +1,273 @@
+/* #a4ffaf  #18171f #24232b #e6e5e8 
+#100f15 #525159 
+#f9cc64*/
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+cursor: default;
+     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #18171f;
+}
+h2{
+    color: #e6e5e894;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.password , .generator{
+    padding: 20px 30px;
+    background:#24232b  ;
+    border-radius: 5px;
+    width: 350px;
+}
+.generator{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.length , .password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.password i:hover{
+color: white;
+}
+i{
+   
+    font-size: 20px;
+    color:#a4ffaf ;
+}
+
+#password{
+    cursor: default;
+    font-size: 20px;
+    font-weight: 900;
+    color:#525159 ;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+}
+#points{
+    margin: 10px 0;
+}
+#lenghtCount{
+    color:#a4ffaf;
+    font-size: 20px;
+}
+.length p{
+    color:#e6e5e8 ;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+.inpts{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+label{
+    color: #e6e5e8;
+}
+.strength{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #18171f;
+    margin: 20px 0;
+}
+.strength p,
+.strength span{
+    color: #e6e5e8;
+}
+.rectangles,.level{
+    display: flex;
+    gap: 5px;
+}
+.level{
+    gap: 10px;
+}
+.rectangle{
+    height: 20px ;
+    width: 8px;
+    border: 1px solid #e6e5e8;
+}
+button{
+    background-color: #a4ffaf;
+    border: none;
+   height: 40px;
+   font-weight: 700;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border:1px solid transparent;
+   gap: 5px;
+   border-radius: 2px;
+   transition: all  0.5s ease;
+
+}
+button:hover{
+background: transparent;
+color: #a4ffaf;
+border:1px solid #a4ffaf;
+}
+button:hover i{
+    color: #a4ffaf;
+}
+button i{
+    color: #18171f;
+    font-size: 15px;
+}
+.alert{
+    position:absolute;
+    background: #e6e5e8;
+  border-radius: 5px;
+ padding: 50px 30px;
+
+}
+.alert p{
+    font-weight: 500;
+}
+.alert #i{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #18171f;
+ 
+}
+.alert p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.alert p i{
+    cursor: default;
+    font-size: 30px;
+    color: #f9cc64;
+}
+.alert-container{
+    position: fixed;
+    background: #100f15a8  ;
+    height: 100%;
+    width: 100%;
+ 
+}
+.hidden{
+    display: none;
+}
+i , button{
+    cursor: pointer;
+}
+/* Hide default appearance of the range input */
+input[type="range"] {
+    -webkit-appearance: none; /* For Safari and Chrome */
+    appearance: none; /* For Firefox */
+    width: 100%; /* Full width */
+    height: 8px; /* Height of the track */
+    border-radius: 5px; /* Round the edges */
+    background: linear-gradient(to right, #a4ffaf 0%, #a4ffaf 10%, #100f15 10%, #100f15 100%); /* Placeholder gradient */
+}
+
+/* Custom style for the thumb (circle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    background: #e6e5e8; /* Color of the thumb */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px; /* Width of the thumb */
+    height: 15px; /* Height of the thumb */
+    background: #e6e5e8; /* Color of the thumb */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Pointer cursor */
+}
+
+
+/* Optional styling for focused thumb */
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #100f15; /* Background color when focused */
+    border: 2px solid #a4ffaf; /* Border color when focused */
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between checkboxes */
+}
+
+.checkbox input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 30px; /* Space for the custom checkbox */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Custom checkbox */
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px; /* Width of the custom checkbox */
+    height: 15px; /* Height of the custom checkbox */
+    border: 2px solid #a4ffaf; /* Border color */
+  
+    background: transparent; /* Background color when unchecked */
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+/* Checked state */
+.checkbox input[type="checkbox"]:checked + label:before {
+    background: #a4ffaf; /* Background color when checked */
+    border-color: #a4ffaf; /* Border color when checked */
+}
+
+/* Add a check mark */
+.checkbox input[type="checkbox"]:checked + label:before {
+    content: '✔'; /* Unicode character for check mark */
+    color: #100f15; /* Color of the check mark */
+    display: flex; /* Center the check mark */
+    justify-content: center; /* Center the check mark */
+    align-items: center; /* Center the check mark */
+    font-size: 18px;
+}
+
+/* Optional: Change the text color of the label when checked */
+.checkbox input[type="checkbox"]:checked  {
+    color: #a4ffaf; /* Change label text color when checked */
+}
+.pstype{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
